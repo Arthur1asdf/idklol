@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Job Page Detector",
+  "version": "0.1.0",
+  "description": "Detects job application pages for now.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
